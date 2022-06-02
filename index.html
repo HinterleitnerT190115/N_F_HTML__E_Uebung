@@ -3,33 +3,44 @@
     <meta charset="UTF-8" />
   </head>
   <body>
-    <!-- Stackblitz doesn't support static images apparently, so using the raw github url instead -->
-    <img
-      src="https://github.com/HinterleitnerT190115/N_F_HTML__E_Uebung/blob/master/mensch.png?raw=true"
-      alt="Menschlicher Körper"
-      usemap="#menschMap"
-      style="width: 250; height: 500px"
-    />
-
-    <map name="menschMap">
-      <area
-        shape="rect"
-        coords="105,0,158,70"
-        alt="Kopf"
-        href="https://de.wikipedia.org/wiki/Kopf"
-      />
-      <area
-        shape="rect"
-        coords="90,150,130,170"
-        alt="Leber"
-        href="https://de.wikipedia.org/wiki/Leber"
-      />
-      <area
-        shape="rect"
-        coords="111,240,140,275"
-        alt="Genitalien"
-        href="https://de.wikipedia.org/wiki/Genitalien"
-      />
-    </map>
+    <table style="width: 100%">
+      <tr>
+        <td style="width: 250px">
+          <!-- Stackblitz doesn't support static images apparently, so using the raw github url instead -->
+          <img
+            src="https://github.com/HinterleitnerT190115/N_F_HTML__E_Uebung/blob/master/mensch.png?raw=true"
+            alt="Menschlicher Körper"
+            usemap="#menschMap"
+            style="width: 250; height: 500px"
+          />
+          <map name="menschMap">
+            <area
+              shape="rect"
+              coords="105,0,158,70"
+              alt="Kopf"
+              href="https://de.wikipedia.org/wiki/Kopf"
+              target="infoPage"
+            />
+            <area
+              shape="rect"
+              coords="90,150,130,170"
+              alt="Leber"
+              href="https://de.wikipedia.org/wiki/Leber"
+              target="infoPage"
+            />
+            <area
+              shape="rect"
+              coords="111,240,140,275"
+              alt="Genitalien"
+              href="https://de.wikipedia.org/wiki/Genitalien"
+              target="infoPage"
+            />
+          </map>
+        </td>
+        <td>
+        <iframe name="infoPage" style="width: 100%; height: 700px">
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
